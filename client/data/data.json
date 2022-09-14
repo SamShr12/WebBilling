@@ -1,0 +1,48 @@
+{
+  "posts": [
+    {
+      "id": "dae0e9b5-a56c-43ef-80ce-13fe1aa74eda",
+      "product_name": "Lays",
+      "price_per_box": "100",
+      "price_per_dozen": "200",
+      "price_per_piece": "300"
+    },
+    {
+      "id": "3b471f20-f39b-44a7-9417-9b9a56339adb",
+      "product_name": "Drink",
+      "price_per_box": "900",
+      "price_per_dozen": "2000",
+      "price_per_piece": "8000"
+    },
+    {
+      "id": "e9c46118-5cd3-4a21-86fd-a5421e3f778c",
+      "product_name": "Milk",
+      "price_per_box": "300",
+      "price_per_dozen": "400",
+      "price_per_piece": "600"
+    },
+    {
+      "id": "b41523e5-d844-4437-9b50-4ce4c64618a6",
+      "product_name": "Kurkure",
+      "price_per_box": "4000",
+      "price_per_dozen": "2000",
+      "price_per_piece": "100"
+    }
+  ],
+  "items": [
+    {
+      "id": "b7e0ea57-1fd4-48bf-9ab9-0725b8d20944",
+      "cart_product_name": "Lays",
+      "cart_product_quantity": "4",
+      "cart_product_status": "300",
+      "cart_product_amount": 1200
+    },
+    {
+      "id": "e67f7de2-8c64-4caa-a078-25081dbe6394",
+      "cart_product_name": "Drink",
+      "cart_product_quantity": "3",
+      "cart_product_status": "8000",
+      "cart_product_amount": 24000
+    }
+  ]
+}
