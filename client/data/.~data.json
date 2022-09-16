@@ -64,6 +64,13 @@
       "cart_product_quantity": "3",
       "cart_product_status": "box",
       "cart_product_amount": 12000
+    },
+    {
+      "id": "191f075e-2022-4e2c-80a0-90f56eaa4de0",
+      "cart_product_name": "Kurkure",
+      "cart_product_quantity": "4",
+      "cart_product_status": "dozen",
+      "cart_product_amount": 8000
     }
   ]
 }

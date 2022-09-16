@@ -8,10 +8,12 @@ const Create = ({Data}) => {
     const [getSearch, setgetSearch] = useState([])
     const [quantity, setQuantity] = useState(1)
     const [sum, setSum] = useState()
+    const [stateval, setStateVal] = useState({})
+
     const options = Data.map(el => (
         {label : el.product_name, here_id: el.id}
     ))
-    let subtotal = getSearch.price_per_piece ? parseFloat(quantity) * parseFloat(getSearch.price_per_piece) : 0 
+    let subtotal = stateval.ps ? parseFloat(quantity) * parseFloat(stateval.ps) : 0 
 
       const handleSearch = async(e) => {
         e.preventDefault()
@@ -30,7 +32,7 @@ const Create = ({Data}) => {
             id,
             cart_product_name:getSearch.product_name,
             cart_product_quantity:quantity,
-            cart_product_status: getSearch.price_per_piece,
+            cart_product_status: stateval.lb,
             cart_product_amount: subtotal
         }
 
@@ -40,7 +42,23 @@ const Create = ({Data}) => {
             console.log(error.message)
         }
       }
-    
+      
+      const optval = [
+        {
+            label:"box",
+            price:getSearch.price_per_box
+        },
+        {
+            label:"dozen",
+            price:getSearch.price_per_dozen
+        },
+        {
+            label:"piece",
+            price:getSearch.price_per_piece
+        }
+      ]
+
+      console.log(stateval)
   return (
     <section>
             <h2 className='text-header'>Create Items</h2>
@@ -62,7 +80,10 @@ const Create = ({Data}) => {
                 onChange={(e) => setQuantity(e.target.value)}
                 placeholder="1"
                 />
-                <p>{getSearch.price_per_piece}</p>
+                    <Select 
+                    options={optval}
+                    onChange={(e) => setStateVal({ps:e.price, lb:e.label})}
+                    />
                 <p>{subtotal}</p>
                 </div>
                 <div className='text-left'>
