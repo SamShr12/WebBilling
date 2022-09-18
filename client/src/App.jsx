@@ -1,7 +1,6 @@
-import { Feed } from './components'
+import { Add, Edit, EditAdmin, Feed, Invoice, ShowAll } from './components'
 import {Routes, Route} from 'react-router-dom'
-import Add from './components/Admin/Add'
-import Invoice from './components/Invoice'
+
 function App() {
   return (
     <div className="app">
@@ -9,6 +8,9 @@ function App() {
       <Route path='/' element={<Feed />} />
       <Route path='/additems' element={<Add />} />
       <Route path='/invoice' element={<Invoice />} />
+      <Route path='/edit/:id' element={<Edit />} />
+      <Route path='/show/all' element={<ShowAll />} />
+      <Route path='/edit/main/:id' element={<EditAdmin />} />
     </Routes>
     </div>
   )

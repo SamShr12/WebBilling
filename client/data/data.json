@@ -1,11 +1,11 @@
 {
   "posts": [
     {
-      "id": "dae0e9b5-a56c-43ef-80ce-13fe1aa74eda",
       "product_name": "Lays",
-      "price_per_box": "100",
+      "price_per_box": "1000",
       "price_per_dozen": "200",
-      "price_per_piece": "300"
+      "price_per_piece": "300",
+      "id": "dae0e9b5-a56c-43ef-80ce-13fe1aa74eda"
     },
     {
       "id": "3b471f20-f39b-44a7-9417-9b9a56339adb",
@@ -20,30 +20,9 @@
       "price_per_box": "300",
       "price_per_dozen": "400",
       "price_per_piece": "600"
-    },
-    {
-      "id": "b41523e5-d844-4437-9b50-4ce4c64618a6",
-      "product_name": "Kurkure",
-      "price_per_box": "4000",
-      "price_per_dozen": "2000",
-      "price_per_piece": "100"
     }
   ],
   "items": [
-    {
-      "id": "b7e0ea57-1fd4-48bf-9ab9-0725b8d20944",
-      "cart_product_name": "Lays",
-      "cart_product_quantity": "4",
-      "cart_product_status": "300",
-      "cart_product_amount": 1200
-    },
-    {
-      "id": "e67f7de2-8c64-4caa-a078-25081dbe6394",
-      "cart_product_name": "Drink",
-      "cart_product_quantity": "3",
-      "cart_product_status": "8000",
-      "cart_product_amount": 24000
-    },
     {
       "id": "abadb514-da2e-4fe6-b3ab-06a2eb76cf2c",
       "cart_product_name": "Kurkure",
@@ -59,11 +38,18 @@
       "cart_product_amount": 1200
     },
     {
-      "id": "c5e81064-d1be-465b-bcc7-f10ad200f7c2",
       "cart_product_name": "Kurkure",
-      "cart_product_quantity": "3",
+      "cart_product_quantity": "5",
       "cart_product_status": "box",
-      "cart_product_amount": 12000
+      "cart_product_amount": "5001",
+      "id": "c5e81064-d1be-465b-bcc7-f10ad200f7c2"
+    },
+    {
+      "id": "3ab37cf2-c918-4b91-8ae0-a505bf44edc4",
+      "cart_product_name": "Lays",
+      "cart_product_quantity": "2",
+      "cart_product_status": "piece",
+      "cart_product_amount": 600
     }
   ]
 }

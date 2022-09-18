@@ -22,6 +22,12 @@ const Feed = () => {
     <section>
         <h2 className='text-big'>Billing App</h2>
         <div className='text-right w-90' style={{marginRight:"120px"}}>
+            <Link to={`/show/all`}>
+            <button className='submit-button'>Show Items -</button>
+            </Link>
+            <Link to={`/additems`}>
+            <button className='submit-button'>Create Items +</button>
+            </Link>
             <Link to={'/invoice'}>
             <button className='submit-button'>Create Invoice</button>
             </Link>

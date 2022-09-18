@@ -38,6 +38,7 @@ const Create = ({Data}) => {
 
         try {
             const response = await axios.post('/items', addCart)
+            window.location.reload(false)
         } catch (error) {
             console.log(error.message)
         }
@@ -58,7 +59,6 @@ const Create = ({Data}) => {
         }
       ]
 
-      console.log(stateval)
   return (
     <section>
             <h2 className='text-header'>Create Items</h2>
@@ -75,6 +75,7 @@ const Create = ({Data}) => {
                 <Select 
                 options={options}
                 onChange={(e) => setsearch(e.here_id)}
+                autoFocus
                 />
                 <input type="number" name="" id="" className='inp-num' 
                 onChange={(e) => setQuantity(e.target.value)}

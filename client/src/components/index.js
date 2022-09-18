@@ -1,1 +1,6 @@
 export {default as Feed } from './Feed'
+export {default as Add} from './Admin/Add'
+export {default as Invoice } from './Invoice'
+export {default as Edit} from './Edit'
+export {default as ShowAll} from './Admin/ShowAll'
+export {default as EditAdmin} from './Admin/EditAdmin'

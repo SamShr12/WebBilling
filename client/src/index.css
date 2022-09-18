@@ -66,12 +66,25 @@
 .w-10{
   width: 85px;
   height: 40px;
-  border: 1px solid #fd2d2d !important;
-  background: #fd2d2d !important;
   margin-top: 8px;
 }
 .w-full{
   width: 90%;
+}
+
+.bg-red{
+  background: #fd2d2d !important;
+  border: 1px solid #fd2d2d !important;
+
+}
+
+.capitalize{
+  text-transform: capitalize;
+}
+
+.bg-47baef{
+  border: 1px solid #47baef !important;
+  background: #47baef !important;
 }
 
 .border{
@@ -96,6 +109,7 @@
   color: #fff;
   letter-spacing: 1px;
   cursor: pointer;
+  margin-right: 2px;
 }
 .submit-button:hover{
   opacity: 0.7;
